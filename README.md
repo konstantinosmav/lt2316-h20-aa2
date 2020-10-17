@@ -1,10 +1,9 @@
 ## LT2316 H20 Assignment A2 : Ner Classification
 
-Name: *fill in your real name here* (if you don't want to use your real name with your current GitHub account, you will have to make another GitHub account)
-
+Name: Konstantinos Mavromatakis
 ## Notes on Part 1.
 
-*fill in notes and documentation for part 1 as mentioned in the assignment description*
+I decided to use an LSTM since it is always a good choice for sequential data and I have used it in a previous assignment. Also, I knew I did not want to use a RNN given the vanishing and exploding gradients. I used an embedding layer since in the first assignment my features were token ids and I represented them as word embeddings which I am planning to train on part 2. I used hidden layers too to improve my model's performance. My forward function returns the prediction made with the Linear layer along with the hidden state(h,c).
 
 ## Notes on Part 2.
 

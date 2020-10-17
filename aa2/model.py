@@ -7,7 +7,7 @@ out_size = 5 #num of ner labels
 
 
 class MyRecurrentNet(nn.Module) :
-    def __init__(self, vocab_size, hidden_size, num_layers,emb_size,out_size, bidirectional) :
+    def __init__(self, vocab_size, hidden_size, num_layers,emb_size,out_size) :
         super().__init__()
         
         self.vocab_size = vocab_size

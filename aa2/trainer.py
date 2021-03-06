@@ -123,7 +123,7 @@ class Trainer:
         scores['precision'] = precision
         f = f1_score(val_correct_labels, val_predictions, average='weighted')
         scores['f1_score'] = f
-        print("{}: Total loss in epoch {} is: {}      |      F1 score in validation is: {}".format(model_name, epochs, total_loss, f))
+        print("{}: Validation loss epoch {} : {}, Validation F1 score: {}".format(model_name, epochs, total_loss, f))
         e += 1
         self.save_model(epochs, model, optimizer, total_loss, scores, hyperparamaters, model_name)
  
